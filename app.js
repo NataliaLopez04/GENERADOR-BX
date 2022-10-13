@@ -51,24 +51,6 @@ const generateCode = () => {
   } else {
     code.innerHTML = `box-shadow: ${xValue}px ${yValue}px ${blurValue}px ${spreadValue}px ${colorValue}`;
   }
-
-  /*  hljs.highlightAll(); */
 };
 
 generateCodeBtn.addEventListener("click", generateCode);
-
-/* /* /* Color de la caja */
-/* const colorBox = changeColor(document.querySelector("#color-box").value);
-colorBox.addEventListener("input", (e) => {
-  box.style.backgroundColor = e.target.value;
-});
-
-const generatorBoxColor = () => {
-  if (colorBox != undefined) {
-    codeColor.innerHTML = `background-color ${box.style.backgroundColor}`;
-  } else {
-    codeColor.innerHTML = `background-color`;
-  }
-};
-
-generateCodeBtn.addEventListener("click", generatorBoxColor); */
